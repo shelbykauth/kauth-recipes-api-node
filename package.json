@@ -11,6 +11,8 @@
     "start": "ts-node-dev --respawn src/main.ts",
     "test": "node test.js",
     "lint": "tslint ./src/*",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "build": "tsc",
     "start:cli": "node dist/main.js",
     "heroku-postbuild": "run-s clean build"
