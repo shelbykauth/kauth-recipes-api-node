@@ -1,8 +1,8 @@
 {
-  "name": "Start on Heroku: Node.js",
-  "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/heroku/node-js-getting-started",
+  "name": "Kauth Recipes API",
+  "description": "A Recipe-sharing API",
+  "repository": "https://github.com/shelbykauth/kauth-recipes-api-node",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
-  "keywords": ["node", "express", "heroku"],
+  "keywords": ["node", "express", "heroku", "restAPI", "recipes"],
   "image": "heroku/nodejs"
 }
