@@ -14,8 +14,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "build": "tsc",
+    "moveFiles": "shx cp -R ./public ./dist/public && cp -R ./views ./dist/views",
     "start:cli": "node dist/main.js",
-    "heroku-postbuild": "run-s clean build"
+    "heroku-postbuild": "run-s clean build moveFiles"
   },
   "dependencies": {
     "ejs": "^2.5.6",
