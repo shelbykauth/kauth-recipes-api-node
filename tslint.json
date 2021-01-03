@@ -1,0 +1,10 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {},
+  "project": "./src/*",
+  "rules": {
+    "no-console": false
+  },
+  "rulesDirectory": []
+}
