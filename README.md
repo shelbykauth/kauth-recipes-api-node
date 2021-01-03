@@ -1,33 +1,58 @@
 # node-js-getting-started
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+## Tech Stack:
 
-This application supports the [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+- [Typescript](https://www.typescriptlang.org/) ([npm](https://www.npmjs.com/package/typescript), use tsc)
+- [Express](https://expressjs.com/) ([npm](https://www.npmjs.com/package/express))
+- [Sequelize](https://sequelize.org/) ([npm](https://www.npmjs.com/package/sequelize))
+- [Postgres](https://www.postgresql.org/)
+- [Heroku](https://www.heroku.com/home)
 
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
+Must be logged into Heroku
 
 ```sh
-$ git clone https://github.com/heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
+$ git clone https://github.com/shelbykauth/kauth-recipes-api-node.git # or clone your own fork
+$ cd kauth-recipes-api-node
 $ npm install
 $ npm start
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
+## Deployment Setup
+
+checkout the Getting Started stuff. `heroku git:remote -a <project name>` will allow you to associate this with an existing project.
+
+## Before you deploy
+
+Before deciding to push:
+
+```
+npm run heroku-postbuild
+heroku local web
+```
+
+This should allow you to emulate running on heroku
+
+Before push:
+
+```
+npm run format # (or format-check)
+npm run lint
+npm run test
+```
+
 ## Deploying to Heroku
 
 ```
-$ heroku create
-$ git push heroku main
-$ heroku open
+git push heroku main
+heroku open
 ```
 
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+Don't forget to push to origin!
 
 ## Documentation
 
